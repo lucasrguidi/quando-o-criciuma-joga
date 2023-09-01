@@ -1,0 +1,35 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+
+#root {
+  height: 100vh;
+  font-family: 'Inter', sans-serif;
+}
+
+.g4 {
+  border-right: .2em solid #20c634;
+}
+.z4 {
+  border-right: .2em solid #d5150b;
+}
+
+/* Add this CSS to your stylesheet or use inline styles */
+::-webkit-scrollbar {
+  width: .5em;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f0f0f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #fbbf24;
+  border-radius: 5px;
+}
+
+
