@@ -3,7 +3,8 @@
 
 > Este é um projeto pessoal que desenvolvi para estudos usando de tema o Criciúma Esporte Clube, meu time de coração. O projeto consiste em uma aplicação web que mostra o próximo jogo do Criciúma com os detalhes e um contador, a tabela atualizada ao vivo da Série B do Campeonato Brasileiro, os próximos jogos do Criciúma e os últimos jogos com seus resultados. Os dados são acessados através de uma API, também criada por mim, que faz scrapping em alguns sites de esportes.
 
-### Link do site online
+### Acesse o site online
+<a>https://quando-o-criciuma-joga.vercel.app/</a>
 
 
 ### Tecnologias Utilizadas
