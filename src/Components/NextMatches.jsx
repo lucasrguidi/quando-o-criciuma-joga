@@ -5,10 +5,12 @@ import { MdStadium } from "react-icons/md";
 import { Oval } from "react-loader-spinner";
 import apiUrls from "../../api";
 import useLogoSrc from "../Hooks/useLogo";
+import useStadiumName from "../Hooks/useStadium";
 
 const NextMatches = ({ loading, setLoading }) => {
   const apiUrl = apiUrls.nextMatchesApiUrl;
   const logoSrc = useLogoSrc();
+  const stadiumName = useStadiumName();
   const [nextMacthesData, setNextMatchesData] = React.useState([]);
 
   React.useEffect(() => {
@@ -78,7 +80,7 @@ const NextMatches = ({ loading, setLoading }) => {
             <div className="flex items-center justify-center gap-2 max-lg:gap-1">
               <MdStadium className="text-xl max-lg:text-sm max-lg:text-center" />
               <span className="text-xl max-lg:text-sm max-lg:text-center">
-                {match.estadio}
+                {match.estadio ?? stadiumName(match.time_mandante.nome)}
               </span>
             </div>
 
