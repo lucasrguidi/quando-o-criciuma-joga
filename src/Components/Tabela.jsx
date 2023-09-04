@@ -1,9 +1,11 @@
 import React from "react";
 import { Oval } from "react-loader-spinner";
 import apiUrls from "../../api";
+import useLogoSrc from "../Hooks/useLogo";
 
 const Tabela = ({ loading, setLoading }) => {
   const apiUrl = apiUrls.tableApiUrl;
+  const logoSrc = useLogoSrc();
 
   const [tableData, setTableData] = React.useState([]);
 
@@ -75,10 +77,10 @@ const Tabela = ({ loading, setLoading }) => {
               >
                 {pos.posicao}°
               </td>
-              <td className="py-2 px-2">
+              <td className="p-2">
                 <img
-                  className="h-8 max-lg:max-w-none"
-                  src={pos.time.escudo}
+                  className="h-8 w-8 max-lg:max-w-none"
+                  src={logoSrc(pos.time.nome)}
                   referrerPolicy="no-referrer"
                   title={pos.time.nome}
                 ></img>

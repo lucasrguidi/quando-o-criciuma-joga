@@ -10,14 +10,14 @@ const Footer = () => {
       style={{ height: "5%" }}
     >
       <div className="flex justify-end items-center gap-4 w-3/5 max-lg:flex-col max-lg:w-full max-lg:justify-center">
-        <span className="text-lg max-lg:text-base max-lg:text-center">
+        <span className="text-lg max-lg:text-base max-lg:text-center ">
           Desenvolvido por Lucas Guidi
         </span>
         <div className="flex gap-4 max-lg:w-full max-lg:justify-center">
           <a href="https://www.linkedin.com/in/lucasrguidi/">
             <AiFillLinkedin className="text-2xl" />
           </a>
-          <a href="https://github.com/lucasrguidi">
+          <a href="https://github.com/lucasrguidi/quando-o-criciuma-joga">
             <AiFillGithub className="text-2xl" />
           </a>
         </div>

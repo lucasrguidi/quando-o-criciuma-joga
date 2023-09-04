@@ -36,7 +36,7 @@ const NextMatch = () => {
     );
   if (nextMatchData)
     return (
-      <div className="bg-white h-3/4 w-full flex flex-col justify-center gap-10 p-4 rounded-2xl max-lg:h-fit max-lg:gap-6 max-lg:p-8">
+      <div className="bg-white h-3/4 w-full flex flex-col justify-center gap-4 p-4 rounded-2xl max-lg:h-fit max-lg:gap-4 max-lg:p-8">
         <MatchDate nextMatchData={nextMatchData} />
         <Countdown nextMatchData={nextMatchData} />
         <Teams nextMatchData={nextMatchData} />

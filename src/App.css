@@ -1,26 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
 #root {
   height: 100vh;
-  font-family: 'Inter', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 .g4 {
-  border-right: .2em solid #20c634;
+  border-right: 0.2em solid #20c634;
 }
 .z4 {
-  border-right: .2em solid #d5150b;
+  border-right: 0.2em solid #d5150b;
 }
 
 /* Add this CSS to your stylesheet or use inline styles */
 ::-webkit-scrollbar {
-  width: .5em;
+  width: 0.5em;
 }
 
 ::-webkit-scrollbar-track {
@@ -32,4 +32,6 @@
   border-radius: 5px;
 }
 
-
+img {
+  object-fit: contain;
+}

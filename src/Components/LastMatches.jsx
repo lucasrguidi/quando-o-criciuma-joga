@@ -2,9 +2,11 @@ import React from "react";
 import { AiFillCalendar } from "react-icons/ai";
 import { Oval } from "react-loader-spinner";
 import apiUrls from "../../api";
+import useLogoSrc from "../Hooks/useLogo";
 
 const LastMatches = ({ loading, setLoading }) => {
   const apiUrl = apiUrls.lastMatchesApiUrl;
+  const logoSrc = useLogoSrc();
   const [lastMatchesData, setLastMatchesData] = React.useState([]);
 
   React.useEffect(() => {
@@ -45,8 +47,8 @@ const LastMatches = ({ loading, setLoading }) => {
         >
           <div className="w-1/4 flex justify-center items-center max-lg:w-1/5">
             <img
-              className="h-24 max-lg:h-10"
-              src={match.time_mandante.escudo}
+              className="w-32"
+              src={logoSrc(match.time_mandante.nome)}
               referrerPolicy="no-referrer"
               title={match.time_mandante.nome}
             ></img>
@@ -73,8 +75,8 @@ const LastMatches = ({ loading, setLoading }) => {
           </div>
           <div className="w-1/4 flex justify-center items-center max-lg:w-1/5">
             <img
-              className="h-24 max-lg:h-10"
-              src={match.time_visitante.escudo}
+              className="w-32"
+              src={logoSrc(match.time_visitante.nome)}
               referrerPolicy="no-referrer"
               title={match.time_visitante.nome}
             ></img>

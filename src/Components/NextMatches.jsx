@@ -4,9 +4,11 @@ import { AiFillClockCircle } from "react-icons/ai";
 import { MdStadium } from "react-icons/md";
 import { Oval } from "react-loader-spinner";
 import apiUrls from "../../api";
+import useLogoSrc from "../Hooks/useLogo";
 
 const NextMatches = ({ loading, setLoading }) => {
   const apiUrl = apiUrls.nextMatchesApiUrl;
+  const logoSrc = useLogoSrc();
   const [nextMacthesData, setNextMatchesData] = React.useState([]);
 
   React.useEffect(() => {
@@ -52,8 +54,8 @@ const NextMatches = ({ loading, setLoading }) => {
         >
           <div className="w-1/4 flex justify-center items-center max-lg:w-1/5">
             <img
-              className="h-24 max-lg:h-10"
-              src={match.time_mandante.escudo}
+              className="w-32"
+              src={logoSrc(match.time_mandante.nome)}
               referrerPolicy="no-referrer"
               title={match.time_mandante.nome}
             ></img>
@@ -88,8 +90,8 @@ const NextMatches = ({ loading, setLoading }) => {
           </div>
           <div className="w-1/4 flex justify-center items-center max-lg:w-1/5">
             <img
-              className="h-24 max-lg:h-10"
-              src={match.time_visitante.escudo}
+              className="w-32"
+              src={logoSrc(match.time_visitante.nome)}
               referrerPolicy="no-referrer"
               title={match.time_visitante.nome}
             ></img>
