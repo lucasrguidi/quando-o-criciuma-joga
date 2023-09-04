@@ -18,7 +18,7 @@ function App() {
 
   return (
     <>
-      <Analytics mode={"production"} />;
+      <Analytics mode={"production"} />
       <div className="h-screen bg-yellow-400 max-lg:h-fit">
         <div
           className="container mx-auto flex max-lg:flex-col-reverse max-lg:justify-center max-lg:items-center max-lg:gap-12 max-lg:p-4"
