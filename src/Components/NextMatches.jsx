@@ -56,7 +56,7 @@ const NextMatches = ({ loading, setLoading }) => {
         >
           <div className="w-1/4 flex justify-center items-center max-lg:w-1/5">
             <img
-              className="w-32"
+              className="w-32 small-h-matches-img"
               src={logoSrc(match.time_mandante.nome)}
               referrerPolicy="no-referrer"
               title={match.time_mandante.nome}
@@ -85,14 +85,14 @@ const NextMatches = ({ loading, setLoading }) => {
             </div>
 
             <div className="flex items-center justify-center gap-2 max-lg:gap-1">
-              <h5 className="text-base max-lg:text-xs max-lg:text-center">
+              <h5 className="text-base max-lg:text-xs max-lg:text-center whitespace-nowrap">
                 {match.campeonato}
               </h5>
             </div>
           </div>
           <div className="w-1/4 flex justify-center items-center max-lg:w-1/5">
             <img
-              className="w-32"
+              className="w-32 small-h-matches-img"
               src={logoSrc(match.time_visitante.nome)}
               referrerPolicy="no-referrer"
               title={match.time_visitante.nome}

@@ -79,7 +79,7 @@ const Tabela = ({ loading, setLoading }) => {
               </td>
               <td className="p-2">
                 <img
-                  className="h-8 w-8 max-lg:max-w-none"
+                  className="h-8 w-8 max-lg:max-w-none small-h-table-img"
                   src={logoSrc(pos.time.nome)}
                   referrerPolicy="no-referrer"
                   title={pos.time.nome}

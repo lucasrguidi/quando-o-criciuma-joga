@@ -35,3 +35,23 @@
 img {
   object-fit: contain;
 }
+
+.response-h {
+  height: 75%;
+}
+
+@media (max-height: 800px) {
+  .responsive-h {
+    height: fit-content !important;
+    padding: 2em 1em !important;
+    max-height: 100% !important;
+  }
+
+  .small-h-table-img {
+    width: 4em !important;
+  }
+
+  .small-h-matches-img {
+    width: 6em !important;
+  }
+}
