@@ -13,7 +13,7 @@ const NextMatchMemo = React.memo(({ loading, setLoading }) => (
 ));
 
 function App() {
-  const [statsView, setStatsView] = React.useState("table");
+  const [statsView, setStatsView] = React.useState("nextMatches");
   const [loading, setLoading] = React.useState(null);
 
   return (
