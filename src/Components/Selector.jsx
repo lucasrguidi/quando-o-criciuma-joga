@@ -8,12 +8,12 @@ const Selector = ({ setStatsView, statsView }) => {
 
   return (
     <div className=" flex items-center justify-center p-2 rounded-2xl bg-slate-400 bg-opacity-20 gap-4 text-lg max-lg:text-base max-lg:text-center">
-      <div
+      {/* <div
         className={statsView === 'table' ? selected : notSelected}
         onClick={() => setStatsView('table')}
       >
         Tabela
-      </div>
+      </div> */}
       <div
         className={statsView === 'nextMatches' ? selected : notSelected}
         onClick={() => setStatsView('nextMatches')}
