@@ -20,7 +20,7 @@ export default function Home() {
   const [loading, setLoading] = useState<boolean>(true)
   const [data, setData] = React.useState<ResponseData | null>(null)
 
-  const apiUrl = 'http://15.228.190.46:3000/api/quando-o-criciuma-joga'
+  const apiUrl: string = process.env.NEXT_PUBLIC_API_URL as string
 
   React.useEffect(() => {
     async function getData() {

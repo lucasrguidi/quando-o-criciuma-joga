@@ -1,7 +1,6 @@
 import React from 'react'
-import { AiFillLinkedin, AiFillGithub } from 'react-icons/ai'
+import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from 'react-icons/ai'
 import LogoMemoriasNoHH from '../../../public/logo-memoriasnohh.png'
-import { StaticImageData } from 'next/image'
 
 const Footer = () => {
   return (
@@ -19,6 +18,9 @@ const Footer = () => {
           </a>
           <a href="https://github.com/lucasrguidi/quando-o-criciuma-joga">
             <AiFillGithub className="text-2xl" />
+          </a>
+          <a href="https://instagram.com/lucasrguidi/">
+            <AiFillInstagram className="text-2xl" />
           </a>
         </div>
       </div>
